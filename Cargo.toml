@@ -1,0 +1,18 @@
+[package]
+name = "Iced_example"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+iced = { version = "0.13.1", features = ["tokio", "canvas"] }
+tokio = { version = "1", features = ["full"] }
+rfd = "0.14.1"
+
+[[bin]]
+name = "checkbox"
+path = "bin/checkbox/main.rs"
+
+[[bin]]
+name = "button"
+path = "bin/button/main.rs"

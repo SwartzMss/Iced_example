@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'button'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=button",
+                    "--package=Iced_example"
+                ],
+                "filter": {
+                    "name": "button",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'checkbox'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=checkbox",
+                    "--package=Iced_example"
+                ],
+                "filter": {
+                    "name": "checkbox",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'checkbox'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=checkbox",
+                    "--package=Iced_example"
+                ],
+                "filter": {
+                    "name": "checkbox",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
