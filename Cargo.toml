@@ -10,5 +10,15 @@ tokio = { version = "1", features = ["full"] }
 rfd = "0.14.1"
 
 [[bin]]
-name = "file_operation"
-path = "bin/file_operation/src/main.rs"
+name = "fileOperation"
+path = "bin/fileOperation/src/main.rs"
+
+
+[[bin]]
+name = "inputVariant"
+path = "bin/inputVariant/main.rs"
+
+
+[[bin]]
+name = "multiWindows"
+path = "bin/multiWindows/main.rs"
